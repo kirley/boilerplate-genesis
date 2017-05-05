@@ -11,13 +11,13 @@
  namespace LuggageForward\Boilerplate;
 
  // Setup Theme.
- include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
+ include_once( CHILD_THEME_DIR . '/lib/theme-defaults.php' );
 
  // Add the helper functions.
- include_once( get_stylesheet_directory() . '/lib/helper-functions.php' );
+ include_once( CHILD_THEME_DIR . '/lib/components/customizer/helper-functions.php' );
 
  // Add Image upload and Color select to WordPress Theme Customizer.
- require_once( get_stylesheet_directory() . '/lib/customize.php' );
+ require_once( CHILD_THEME_DIR . '/lib/components/customizer/customize.php' );
 
  // Include Customizer CSS.
- include_once( get_stylesheet_directory() . '/lib/output.php' );
+ include_once( CHILD_THEME_DIR . '/lib/components/customizer/output.php' );
